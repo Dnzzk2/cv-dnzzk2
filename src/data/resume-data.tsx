@@ -9,40 +9,53 @@ import {
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+  name: "方徐凌",
+  initials: "XuLing Fang",
+  location: "Ningbo，Zhejiang",
+  locationLink:
+    "https://map.baidu.com/search/%E5%AE%81%E6%B3%A2%E5%B8%82/@13540031,3464873.25,12z?querytype=s&da_src=shareurl&wd=%E5%AE%81%E6%B3%A2&c=180&src=0&pn=0&sug=0&l=13&b=(13505566,3454986;13571102,3486442)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&device_ratio=2",
+  about: "23年本科毕业|男|00年生",
   summary: (
-    <>
-      Frontend-focused Full Stack Engineer specializing in high-performance
-      React applications, scalable Node.js services, and real-time collaboration
-      systems. Experienced in technical architecture design and remote team
-      leadership.
-    </>
+    <div className="space-y-5">
+      <div className="space-y-2">
+        <h3 className="font-semibold text-gray-900">基础技能</h3>
+        <ul className="list-disc space-y-1.5 pl-5 ">
+          <li>熟悉HTML5/CSS3，熟练运用Flex/Grid布局，能够还原复杂设计稿。</li>
+          <li>熟练使用 Sass、Less，实现样式代码的模块化与高效管理，了解 BEM 规范。</li>
+        </ul>
+      </div>
+
+      <div className="space-y-2">
+        <h3 className="font-semibold text-gray-900">React技术栈</h3>
+        <ul className="list-disc space-y-1.5 pl-5 ">
+          <li>熟练使用React Hooks进行组件开发，深入理解React核心原理</li>
+          <li>掌握Next.js/Vite等现代化开发工具，具备SSR开发经验</li>
+          <li>熟练使用Redux/Zustand等状态管理方案，了解响应式编程</li>
+          <li>能够搭建和维护组件库，具备组件设计和抽象能力</li>
+        </ul>
+      </div>
+
+      <div className="space-y-2">
+        <h3 className=" font-semibold text-gray-900">工程化实践</h3>
+        <ul className="list-disc space-y-1.5 pl-5 ">
+          <li>具备前端工程化经验，熟悉Webpack/Vite等构建工具的配置与优化</li>
+          <li>实践过微前端架构，了解模块联邦等解决方案</li>
+          <li>编写单元测试/E2E测试，确保代码质量与可维护性</li>
+          <li>熟悉CI/CD流程，具备项目部署和运维经验</li>
+        </ul>
+      </div>
+    </div>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  // avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
+  personalWebsiteUrl: "https://dnzzk2.icu",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "dnzzk2@126.com",
+    tel: "+8619883005053",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/Dnzzk2",
         icon: GitHubIcon,
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
-        icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
       },
     ],
   },
