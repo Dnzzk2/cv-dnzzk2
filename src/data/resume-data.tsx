@@ -20,28 +20,47 @@ export const RESUME_DATA = {
       <div className="space-y-2">
         <h3 className="font-semibold text-gray-900">基础技能</h3>
         <ul className="list-disc space-y-1.5 pl-5 ">
-          <li>熟悉HTML5/CSS3，熟练运用Flex/Grid布局，能够还原复杂设计稿。</li>
-          <li>熟练使用 Sass、Less，实现样式代码的模块化与高效管理，了解 BEM 规范。</li>
+          <li>
+            熟悉 HTML5/CSS3 ，熟练运用 Flex/Grid 布局，能够还原复杂设计稿。
+          </li>
+          <li>
+            熟练使用 Sass、Less，实现样式代码的模块化与高效管理，了解 BEM 规范。
+          </li>
+          <li>
+            理解 JavaScript 原型链、闭包、事件循环等概念，熟悉 ES6 新特性。
+          </li>
+          <li>
+            熟悉浏览器渲染机制，优化 DOM 操作，减少页面重绘与回流，提升性能。
+          </li>
+          <li>熟悉 Vue.js，掌握组件化开发与数据绑定。</li>
+          <li>熟悉 leaflet 地图库，进行地图开发。</li>
+          <li>
+            了解 uniapp 开发微信小程序，Nodejs，了解 Nextjs，Solidjs
+            等前端框架，并进行过实践开发。
+          </li>
         </ul>
       </div>
 
       <div className="space-y-2">
         <h3 className="font-semibold text-gray-900">React技术栈</h3>
         <ul className="list-disc space-y-1.5 pl-5 ">
-          <li>熟练使用React Hooks进行组件开发，深入理解React核心原理</li>
-          <li>掌握Next.js/Vite等现代化开发工具，具备SSR开发经验</li>
-          <li>熟练使用Redux/Zustand等状态管理方案，了解响应式编程</li>
-          <li>能够搭建和维护组件库，具备组件设计和抽象能力</li>
+          <li>熟练使用 React Hooks 进行组件开发，深入理解 React 核心原理。</li>
+          <li>
+            熟悉 React 性能优化，运用 memoization 技术与代码分割提升效率。
+          </li>
+          <li>熟练使用 Umijs 前端开发框架。</li>
+          <li>
+            熟练使用 React 生态库，如 Ant Design、Ant Design
+            Pro、ahook、React-Router、dndkit、react-amap、bizcharts等。
+          </li>
         </ul>
       </div>
 
       <div className="space-y-2">
-        <h3 className=" font-semibold text-gray-900">工程化实践</h3>
+        <h3 className=" font-semibold text-gray-900">个人特色</h3>
         <ul className="list-disc space-y-1.5 pl-5 ">
-          <li>具备前端工程化经验，熟悉Webpack/Vite等构建工具的配置与优化</li>
-          <li>实践过微前端架构，了解模块联邦等解决方案</li>
-          <li>编写单元测试/E2E测试，确保代码质量与可维护性</li>
-          <li>熟悉CI/CD流程，具备项目部署和运维经验</li>
+          <li>使用 AI 工具辅助开发，提升工作效率。</li>
+          <li>喜欢尝试新技术，并进行实践。</li>
         </ul>
       </div>
     </div>
@@ -69,129 +88,49 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
+      company: "宁波鑫义信息科技有限公司",
+      // link: "https://film.io",
+      badges: ["React", "Ant Design", "umijs", "less"],
+      title: "前端开发工程师",
       logo: ConsultlyLogo,
-      start: "2024",
-      end: null,
+      start: "2022-7",
+      end: "至今",
       description: (
-        <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
-          <ul className="list-inside list-disc">
-            <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
-            </li>
-            <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
-            </li>
-            <li>
-              Implementing system-wide monitoring and security improvements
-            </li>
-          </ul>
-        </>
+        <div className="space-y-3">
+          <div className="space-y-2">
+            <p className="font-semibold text-gray-900">主要职责</p>
+            <p className="text-gray-700">
+              负责公司项目后台页面的开发与维护，入职至今已参与开发维护项目
+              <span className="font-semibold text-gray-900">65+</span>
+              ，主要负责项目
+              <span className="font-semibold text-gray-900">21+</span>。
+            </p>
+          </div>
+          {/* 分割线 */}
+          <hr className="border-gray-200" />
+          <h4 className="font-mono text-sm font-semibold leading-none print:text-[12px]">
+            项目
+          </h4>
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <p className="font-semibold text-gray-900">高桥国资管理系统</p>
+              <p className="text-gray-700">高桥镇国有资产监督管理系统，</p>
+              <p className="font-medium text-gray-900">我的职责与贡献：</p>
+              <ul className="list-inside list-disc space-y-1 text-gray-700">
+                <li>
+                  负责访客模块、运营管理后台及配套小程序的开发维护，主导代码优化和重构工作
+                </li>
+                <li>
+                  基于 React
+                  技术栈开发新功能，采用模块化组件设计，封装通用业务组件，提升代码复用率
+                  40%+
+                </li>
+                <li>与产品、设计团队紧密协作，完成需求评审与方案设计。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       ),
-    },
-    {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
-      ],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
-      description: (
-        <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
-          <ul className="list-inside list-disc">
-            <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
-            </li>
-            <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
-            </li>
-            <li>
-              Open source contributions to Relay DevTools and React i18n tooling
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
-      description: (
-        <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
-          <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
     },
   ],
   skills: [
