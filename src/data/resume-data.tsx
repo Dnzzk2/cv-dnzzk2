@@ -94,7 +94,7 @@ export const RESUME_DATA = {
       title: "前端开发工程师",
       logo: ConsultlyLogo,
       start: "2022-7",
-      end: "至今",
+      end: "至今（实习一年）",
       description: (
         <div className="space-y-3">
           <div className="space-y-2">
