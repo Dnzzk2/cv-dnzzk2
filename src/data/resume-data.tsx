@@ -112,21 +112,47 @@ export const RESUME_DATA = {
             项目
           </h4>
           <div className="space-y-4">
-            <div className="space-y-2">
-              <p className="font-semibold text-gray-900">高桥国资管理系统</p>
-              <p className="text-gray-700">高桥镇国有资产监督管理系统，</p>
-              <p className="font-medium text-gray-900">我的职责与贡献：</p>
-              <ul className="list-inside list-disc space-y-1 text-gray-700">
-                <li>
-                  负责访客模块、运营管理后台及配套小程序的开发维护，主导代码优化和重构工作
-                </li>
-                <li>
-                  基于 React
-                  技术栈开发新功能，采用模块化组件设计，封装通用业务组件，提升代码复用率
-                  40%+
-                </li>
-                <li>与产品、设计团队紧密协作，完成需求评审与方案设计。</li>
-              </ul>
+            <div className="space-y-4">
+              <div className="space-y-2">
+                <p className="font-semibold text-gray-900">
+                  高桥镇国有资产监督管理系统
+                </p>
+                <p className="text-gray-700">
+                  高桥国资监管系统，总共6个子系统，其中2个驾驶舱，4个管理后台，内容涵盖高桥镇的人大监督、国资招商、国资管理等。
+                </p>
+                <p className="font-medium text-gray-900">我的职责与贡献：</p>
+                <ul className="list-inside list-disc space-y-1 text-gray-700">
+                  <li>
+                    负责人大监督管理、国有资产综合管理、机构及人员管理、招商空间可视化管理四个子系统90%的开发与维护。
+                  </li>
+                  <li>
+                    将独立系统项目，通过路径参数，拆分为多个子系统，以此减少项目的部署与维护成本。
+                  </li>
+                  <li>与产品、设计团队紧密协作，完成需求评审与方案设计。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          {/* 分割线 */}
+          <hr className="border-gray-200" />
+          <div className="space-y-4">
+            <div className="space-y-4">
+              <div className="space-y-2">
+                <p className="font-semibold text-gray-900">
+                  江北区数字孪生基础数据平台
+                </p>
+                <p className="text-gray-700">
+                  江北区数字孪生基础数据平台，致力于让全区信息化项目开发变得更省时、省力成为江北区服务社会治理、发展孪生经济、丰富民生活动的关键基础设施。
+                </p>
+                <p className="font-medium text-gray-900">我的职责与贡献：</p>
+                <ul className="list-inside list-disc space-y-1 text-gray-700">
+                  <li>
+                    负责门户网站20%的开发与维护，负责用户登录后工作区70%的开发与维护。
+                  </li>
+                  <li>负责服务中心的使用文档生成。</li>
+                  <li>与产品、设计团队紧密协作，完成需求评审与方案设计。</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
