@@ -124,15 +124,19 @@ interface ProjectsProps {
  */
 export function Projects({ projects }: ProjectsProps) {
   return (
-    <Section>
-      <h2 className="text-lg font-bold text-gray-800 print:text-base">其他项目</h2>
-      <div className="space-y-3">
+    <Section className="mb-8 print:mb-6">
+      <h2 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 print:text-xl">
+        其他项目
+      </h2>
+      <div className="space-y-4">
         {projects.map((project) => (
-          <div key={project.title} className="space-y-1.5">
-            <div className="flex items-center justify-between gap-2">
-              <h3 className="text-sm font-medium text-gray-700">{project.title}</h3>
+          <div key={project.title} className="space-y-2">
+            <div className="flex items-center justify-between">
+              <h3 className="text-lg font-semibold text-gray-800 print:text-base">
+                {project.title}
+              </h3>
               {project.link && (
-                <a 
+                <a
                   href={project.link.href}
                   className="text-gray-500 hover:text-gray-700 print:hidden"
                   target="_blank"
@@ -142,12 +146,14 @@ export function Projects({ projects }: ProjectsProps) {
                 </a>
               )}
             </div>
-            <p className="text-xs text-gray-600 print:text-[10px] leading-relaxed">{project.description}</p>
-            <div className="flex flex-wrap gap-1 print:hidden">
+            <p className="text-base text-gray-600 print:text-sm">
+              {project.description}
+            </p>
+            <div className="flex flex-wrap gap-1.5 print:hidden">
               {project.techStack.map((tech) => (
-                <span 
+                <span
                   key={tech}
-                  className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] text-gray-600"
+                  className="rounded bg-gray-100 px-2 py-1 text-sm text-gray-600"
                 >
                   {tech}
                 </span>

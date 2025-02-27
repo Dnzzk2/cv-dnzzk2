@@ -94,7 +94,7 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
     <Card className="py-1 print:py-0">
       <CardHeader className="print:space-y-1">
         <div className="flex items-center justify-between gap-x-2 text-base">
-          <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold text-sm leading-none print:text-sm">
+          <h3 className="inline-flex items-center justify-center gap-x-1 text-sm font-semibold leading-none print:text-sm">
             <CompanyLink company={company} link={link} />
             <BadgeList
               className="hidden gap-x-1 sm:inline-flex"
@@ -134,19 +134,40 @@ interface WorkExperienceProps {
  */
 export function WorkExperience({ work }: WorkExperienceProps) {
   return (
-    <Section>
-      <h2 className="text-xl font-bold" id="work-experience">
+    <Section className="mb-8 print:mb-6">
+      <h2 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 print:text-xl">
         工作经历
       </h2>
-      <div
-        className="space-y-4 print:space-y-0"
-        role="feed"
-        aria-labelledby="work-experience"
-      >
+      <div className="space-y-6 print:space-y-4">
         {work.map((item) => (
-          <article key={`${item.company}-${item.start}`} role="article">
-            <WorkExperienceItem work={item} />
-          </article>
+          <div key={item.company} className="space-y-3">
+            <div className="flex items-center justify-between">
+              <h3 className="text-xl font-semibold text-gray-800 print:text-lg">
+                {item.company}
+              </h3>
+              <span className="text-sm text-gray-500 print:text-xs">
+                {item.start} - {item.end}
+              </span>
+            </div>
+            <div className="flex items-center justify-between">
+              <h4 className="text-lg font-medium text-gray-700 print:text-base">
+                {item.title}
+              </h4>
+              <div className="flex flex-wrap gap-1.5 print:hidden">
+                {item.badges.map((badge) => (
+                  <span
+                    key={badge}
+                    className="rounded bg-gray-100 px-2 py-1 text-sm text-gray-600"
+                  >
+                    {badge}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="text-base text-gray-600 print:text-sm">
+              {item.description}
+            </div>
+          </div>
         ))}
       </div>
     </Section>
