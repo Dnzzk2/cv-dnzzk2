@@ -89,7 +89,7 @@ export const RESUME_DATA = {
   work: [
     {
       company: "宁波鑫义信息科技有限公司",
-      // link: "https://film.io",
+      link: "",
       badges: ["React", "Ant Design", "umijs", "less"],
       title: "前端开发工程师",
       logo: ConsultlyLogo,

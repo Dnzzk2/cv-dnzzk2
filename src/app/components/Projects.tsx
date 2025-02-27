@@ -8,6 +8,7 @@ import {
 } from "../../components/ui/card";
 import { Section } from "../../components/ui/section";
 import { RESUME_DATA } from "../../data/resume-data";
+import { ArrowUpRight } from "lucide-react";
 
 type ProjectTags = readonly string[];
 
@@ -123,27 +124,36 @@ interface ProjectsProps {
  */
 export function Projects({ projects }: ProjectsProps) {
   return (
-    <Section className="print-force-new-page scroll-mb-16 print:space-y-4 print:pt-12">
-      <h2 className="text-xl font-bold" id="side-projects">
-        其他项目
-      </h2>
-      <div
-        className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
-        role="feed"
-        aria-labelledby="side-projects"
-      >
+    <Section>
+      <h2 className="text-lg font-bold text-gray-800 print:text-base">其他项目</h2>
+      <div className="space-y-3">
         {projects.map((project) => (
-          <article
-            key={project.title}
-            className="h-full" // Added h-full here
-          >
-            <ProjectCard
-              title={project.title}
-              description={project.description}
-              tags={project.techStack}
-              link={"link" in project ? project.link.href : undefined}
-            />
-          </article>
+          <div key={project.title} className="space-y-1.5">
+            <div className="flex items-center justify-between gap-2">
+              <h3 className="text-sm font-medium text-gray-700">{project.title}</h3>
+              {project.link && (
+                <a 
+                  href={project.link.href}
+                  className="text-gray-500 hover:text-gray-700 print:hidden"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
+              )}
+            </div>
+            <p className="text-xs text-gray-600 print:text-[10px] leading-relaxed">{project.description}</p>
+            <div className="flex flex-wrap gap-1 print:hidden">
+              {project.techStack.map((tech) => (
+                <span 
+                  key={tech}
+                  className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] text-gray-600"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </Section>
