@@ -51,7 +51,7 @@ export const RESUME_DATA = {
           <li>熟练使用 Umijs 前端开发框架。</li>
           <li>
             熟练使用 React 生态库，如 Ant Design、Ant Design
-            Pro、ahook、React-Router、dndkit、react-amap、bizcharts等。
+            Pro、ahooks、React-Router、dndkit、react-amap、bizcharts等。
           </li>
         </ul>
       </div>
