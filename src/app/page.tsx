@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://cv.jarocki.me/opengraph-image",
-        width: 1200,
-        height: 630,
+        url: "http://cv.dnzzk2.icu/favicon.ico",
+        width: 480,
+        height: 480,
         alt: `${RESUME_DATA.name}'s profile picture`,
       },
     ],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${RESUME_DATA.name} - Resume`,
     description: RESUME_DATA.about,
-    images: ["https://cv.jarocki.me/opengraph-image"],
+    images: ["http://cv.dnzzk2.icu/favicon.ico"],
   },
 };
 

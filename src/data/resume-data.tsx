@@ -9,6 +9,7 @@ import {
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
+  avatarUrl: "",
   name: "方徐凌",
   initials: "XuLing Fang",
   location: "Ningbo，Zhejiang",
