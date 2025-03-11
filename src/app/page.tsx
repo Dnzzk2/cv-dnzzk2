@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "http://cv.dnzzk2.icu/favicon.ico",
-        width: 480,
-        height: 480,
+        url: "http://cv.dnzzk2.icu/favicon-512x512.png",
+        width: 512,
+        height: 512,
         alt: `${RESUME_DATA.name}'s profile picture`,
       },
     ],
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${RESUME_DATA.name} - Resume`,
     description: RESUME_DATA.about,
-    images: ["http://cv.dnzzk2.icu/favicon.ico"],
+    images: ["http://cv.dnzzk2.icu/favicon-512x512.png"],
   },
 };
 
